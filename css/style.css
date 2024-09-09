@@ -18,9 +18,9 @@ header {
     }
     
     .header-right {
-        font-family: 'Courier New', Courier, monospace;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         float: right;
-        margin-top: 15px;
+        margin-top: 10px;
         margin-right: 20px;
     }
 }
@@ -38,6 +38,7 @@ nav a.active {
 
 nav a:hover {
     background-color: #bec4ed;
+    color:#5d5491;
 }
 
 body{
@@ -89,8 +90,9 @@ main {
         margin-left: 75px;
     }
 
-    p {
+    h3 {
         font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
     }
 
     h1 {
@@ -99,5 +101,13 @@ main {
 
     h2 {
         font-size: 50px;
+        margin-left: 50px;
+    }
+
+    p {
+        font-size: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
+        font-family: 'Courier New', Courier, monospace;
     }
 }

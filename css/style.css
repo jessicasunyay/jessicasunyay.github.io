@@ -35,7 +35,7 @@ nav a.active {
     color: #f6f6e9;
 }
 
-nav a:hover {
+header nav a:hover {
     background-color: #bec4ed;
     color: #5d5491;
 }
@@ -107,6 +107,64 @@ p {
 a{
     color: white;
     text-decoration: underline;
+}
+
+.projects-page a{
+    text-decoration: none;
+}
+
+footer {
+    background-color: #f6f6e9;
+    color: #5d5491;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+footer-left{
+    margin-left: 10px;
+}
+
+footer p {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.box {
+    width: 200px;
+    height: 300px;
+    background-color: #f6f6e9;
+    padding: 20px;
+    margin: 20px;
+    color:#5d5491;
+    text-align: center;
+
+    h4 {
+        font-size: 25px;
+    }
+
+    h5{
+        font-size: 20px;
+        margin: 0
+    }
+
+    p{
+        font-size: 14px;
+        padding: 2px;
+    }
+}
+
+.box:hover {
+    background-color: #bec4ed;
+    color:#f6f6e9;
+}
+
+.pdf{
+    padding: 20px;
 }
 
 @media (max-width: 768px) {

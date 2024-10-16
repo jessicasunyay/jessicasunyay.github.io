@@ -56,6 +56,13 @@ main {
     flex-wrap: wrap;
 }
 
+.projectboxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .home-page{
     flex-direction:row;
 }
@@ -91,6 +98,11 @@ h4{
     margin-top: 0;
     margin-bottom: 0;
     font-size: 30px;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
 }
 
 p {
@@ -135,7 +147,7 @@ footer p {
 }
 
 .box {
-    width: 200px;
+    width: 250px;
     height: 300px;
     background-color: #f6f6e9;
     padding: 20px;
@@ -167,6 +179,45 @@ footer p {
     padding: 20px;
 }
 
+.tags {
+    margin-top: 5px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #5d5491;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    color: #f6f6e9;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#searchBar {
+    width: 100%;               /* Full width */
+    max-width: 400px;           /* Max width */
+    padding: 10px 15px;         /* Padding inside the input */
+    margin: 20px 0;             /* Space above and below the input */
+    border: 2px solid #bec4ed;     /* Solid border */
+    border-radius: 25px;        /* Rounded corners */
+    font-size: 16px;            /* Font size */
+    color: #5d5491;                /* Text color */
+    background-color: #f6f6e9;  /* Light background color */
+    outline: none;              /* No outline when focused */
+}
+
+#searchBar:focus {
+    border-color: #bec4ed;      /* Change border color on focus */
+    background-color: #fff;     /* Change background color on focus */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* More shadow on focus */
+}
+
+#searchBar::placeholder {
+    color: #999;                /* Lighter color for placeholder */
+    font-style: italic;         /* Italicized placeholder */
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -189,6 +240,7 @@ footer p {
 
     main {
         flex-direction: column;
+        justify-content: center;
         margin: 20px;
     }
 

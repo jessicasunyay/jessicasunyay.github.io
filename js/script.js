@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.pathname === "/" ||
     window.location.pathname.endsWith("index.html")
   ) {
-    const typeText = (element, text, delay = 150) => {
+    const typeText = (element, text, delay = 200) => {
       let i = 0;
       const interval = setInterval(() => {
         element.textContent += text.charAt(i);

@@ -306,7 +306,7 @@ header .navbar {
 
 /*footer section styling*/
 .footer-section {
-    padding: 20px 0;
+    padding: 20px;
     background: var(--cream);
 }
 

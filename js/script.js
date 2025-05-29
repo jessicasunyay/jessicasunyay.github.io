@@ -1,26 +1,38 @@
-const searchBar = document.getElementById('searchBar');
-const boxes = document.querySelectorAll('.box');
-const noResults = document.getElementById('noResults');
+const menuOpenButton = document.querySelector("#menu-open-button");
+const menuCloseButton = document.querySelector("#menu-close-button");
 
-searchBar.addEventListener('keyup', function() {
-    const searchText = searchBar.value.toLowerCase();
-    let hasResults = false;
+menuOpenButton.addEventListener("click", () => {
+  document.body.classList.toggle("show-mobile-menu");
+});
 
-    // Loop through each project box
-    boxes.forEach(function(box) {
-        const boxText = box.textContent.toLowerCase();
+menuCloseButton.addEventListener("click", () => {
+  menuOpenButton.click();
+});
 
-        if (boxText.includes(searchText)) {
-            box.style.display = 'block'; 
-            hasResults = true;
-        } else {
-            box.style.display = 'none';
-        }
-    });
+document.getElementById("currentYear").textContent = new Date().getFullYear();
 
-    if (!hasResults) {
-        noResults.style.display = 'block';
-    } else {
-        noResults.style.display = 'none';
-    }
+window.onload = function () {
+  window.scrollTo(0, 0);
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (
+    window.location.pathname === "/" ||
+    window.location.pathname.endsWith("index.html")
+  ) {
+    const typeText = (element, text, delay = 150) => {
+      let i = 0;
+      const interval = setInterval(() => {
+        element.textContent += text.charAt(i);
+        i++;
+        if (i === text.length) clearInterval(interval);
+      }, delay);
+    };
+
+    const title = document.querySelector(".title");
+    const titleText = "JESSICA";
+
+    title.textContent = "";
+    typeText(title, titleText);
+  }
 });

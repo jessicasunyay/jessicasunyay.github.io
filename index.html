@@ -1,48 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Jessica Sun | Home </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jessica Sun</title>
         <link rel="icon" href="images/logo.png" type="image/icon type">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <!--header & navbar-->
         <header>
-            <div class = "header-left">
-                <img width = "60px" height = "60px" src="images/logo.png"></img>
-            </div>
-            <div class = "header-right">
-                <nav>
-                    <ul>
-                        <a class = "active" href="index.html">Home</a>
-                        <a href="about.html">About</a>
-                        <a href="contact.html">Contact</a>
-                        <a href="projects.html">Projects</a>
-                    </ul>
-                </nav>
+            <div class="section-content">
+            <nav class="navbar">
+                <a href="#home" class="nav-logo">
+                    <img src="images/logo.png" alt="logo" class="logo"/>
+                </a>
+                <ul class="nav-menu">
+                    <button id="menu-close-button" class="fas fa-times"></button>
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                </ul>
+                <button id="menu-open-button" class="fas fa-bars"></button>
+            </nav>
             </div>
         </header>
-        <main class="home-page">
-            <img width = "400px" height = "400px" src = "images/lavenderwebsite.png"></img>
-            <div class = "index-text">
-                <h3>Hi! I'm</h3>
-                <h1>Jessica</h1>
-                <p><i>Welcome to my website!</i></p>
-            </div>
-        </main>
-        <footer>
-            <div class="footer-left">
-                <p><i>&copy;Jessica Sun 2024</i></p>
-            </div>
-            <div class = "footer-right">
-                <nav>
-                    <ul>
-                        <a href="mailto:jessicasunyay@gmail.com"><img width = "30px" height = "30px" src="images/email.png"></img></a>
-                        <a href="https://www.linkedin.com/in/jessicaksun/" target = "_blank"><img width = "30px" height = "30px" src="images/linkedin.png"></img></a>
-                        <a href="https://github.com/jessicasunyay" target="_blank"><img width = "30px" height = "30px" src="images/github.png"></img></a>
-                        <a href="https://www.instagram.com/jessicasunyay/" target = "_blank"><img width = "30px" height = "30px" src="images/instagram.png"></img></a>
+        <main>
+            <!--intro section-->
+            <section id="home" class="intro-section">
+                <div class="section-content">
+                    <div class="intro-details">
+                        <h3 class="subtitle">Hi! I'm</h3>
+                        <h2 class="title">JESSICA</h2>
+                        <p class="description">STUDENT, LEARNER, DEVELOPER</p>
+                        <div class="social-link-list">
+                            <a href="mailto:jessicasunyay@gmail.com" target="_blank" class="social-link">
+                                <img class="social" src="images/email.png" alt="email"/>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jessicaksun/" target="_blank" class="social-link">
+                                <img class="social" src="images/linkedin.png" alt="linkedin"/>
+                            </a>
+                            <a href="https://github.com/jessicasunyay" target="_blank" class="social-link">
+                                <img class="social" src="images/github.png" alt="github"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="intro-image-wrapper">
+                        <img src="images/lavenderwebsite.png" alt="me" class="lavender">
+                    </div>
+                </div>
+            </section>
+            <!--about section-->
+            <section id="about" class="about-section">
+                <div class="section-content">
+                    <div class="about-image-wrapper">
+                       <img src="images/mtl.png" alt="montreal" class="about-image"> 
+                    </div>
+                    <div class="about-details">
+                        <h2 class="section-title">All About Me</h2>
+                        <p class="text">
+                            Hello! I&apos;m Jessica. Born and raised a Marylander, I am currently an undergraduate junior at McGill University in beautiful Montréal, Canada. I&apos;m obtaining a Bachelor of Science in Statistics & Computer Science. I'm interested in full-stack development, geo-information science, data science, and proving NP-completeness when the mood strikes. I love trivia, dachshunds, crochet, cozy autumn days, and the color purple (if you couldn't already tell)!
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!--projects section-->
+            <section id="projects" class="projects-section">
+                <h2 class="section-title">Project Gallery</h2>
+                <div class="section-content">
+                    <ul class="project-gallery">
+                        <li class="project-card">
+                            <img src="images/esrianalysis.png" alt="ESRI analysis" class="project-image">
+                                <div class="project-info">
+                                    <h3 class="project-title">ArcGIS Geospatial Analysis</h3>
+                                    <p class="project-description">Multi-criteria geospatial analysis using ArcGIS to identify optimal flagship store locations in Metro Vancouver.</p>
+                                    <div class="tags">
+                                        <p class="tag">ArcGIS Pro</p>
+                                        <p class="tag">Geography</p>
+                                    </div>
+                            </div>
+                        </li>
+                        <li class="project-card">
+                            <img src="images/relationaldatabase.png" alt="relational database" class="project-image">
+                                <div class="project-info">
+                                    <h3 class="project-title">APLUS Database Model</h3>
+                                    <p class="project-description">A Microsoft Access database to manage student records, incorporating SQL, UI design, and entity-relationship modeling.</p>
+                                    <div class="tags">
+                                        <p class="tag">SLDC</p>
+                                        <p class="tag">SQL</p>
+                                        <p class="tag">Databases</p>
+                                    </div>
+                            </div>
+                        </li>
+                        <li class="project-card">
+                            <img src="images/extendedessay.png" alt="extended essay" class="project-image">
+                                <div class="project-info">
+                                    <h3 class="project-title">Extended Essay</h3>
+                                    <p class="project-description">An independent, self-directed research paper exploring the intersection of cartography, geography, and calculus.</p>
+                                    <div class="tags">
+                                        <p class="tag">Mathematics</p>
+                                        <p class="tag">Geography</p>
+                                    </div>
+                            </div>
+                        </li>
                     </ul>
-                </nav>
-            </div>
-        </footer>
+                </div>
+            </section>
+            <!--footer section-->
+            <footer class="footer-section">
+                <div class="section-content">
+                    <p class="copyright-text">© <span id="currentYear"></span> Jessica Sun</p>
+                    <div class="social-link-list">
+                            <a href="mailto:jessicasunyay@gmail.com" target="_blank" class="social-link">
+                                <img class="social" src="images/email-dark.png" alt="email"/>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jessicaksun/" target="_blank" class="social-link">
+                                <img class="social" src="images/linkedin-dark.png" alt="linkedin"/>
+                            </a>
+                            <a href="https://github.com/jessicasunyay" target="_blank" class="social-link">
+                                <img class="social" src="images/github-dark.png" alt="github"/>
+                            </a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script src="js/script.js"></script>
     </body>
 </html>

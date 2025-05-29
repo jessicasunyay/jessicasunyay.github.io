@@ -11,11 +11,9 @@ menuCloseButton.addEventListener("click", () => {
 
 document.getElementById("currentYear").textContent = new Date().getFullYear();
 
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    window.scrollTo(0, 0);
-  }, 10);
-});
+window.onload = function () {
+  window.scrollTo(0, 0);
+};
 
 document.addEventListener("DOMContentLoaded", () => {
   if (

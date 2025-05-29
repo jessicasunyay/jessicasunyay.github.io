@@ -66,6 +66,7 @@ img.logo{
 img.lavender {
     width: 400px;
     height: 400px;
+    object-fit: cover;
     transition: 2s;
 }
 
@@ -424,6 +425,13 @@ header .navbar {
     }
 
     .about-section .about-image-wrapper .about-image {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1;
+        max-width: 400px;
+    }
+
+    img.lavender{
         width: 100%;
         height: 100%;
         aspect-ratio: 1;

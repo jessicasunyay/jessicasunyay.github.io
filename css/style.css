@@ -11,11 +11,11 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
-  background-color: #f9f6f1;
+  background-color: var(--cream);
 }
 
 body {
-    background-color: #f9f6f1;
+    background-color: var(--cream);
 }
 
 :root {

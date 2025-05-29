@@ -42,3 +42,11 @@ window.onload = function () {
     document.getElementById("body").style.display = "";
   }, 200);
 };
+
+window.addEventListener("hashchange", () => {
+  history.replaceState(
+    null,
+    "",
+    window.location.pathname + window.location.search
+  );
+});

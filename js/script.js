@@ -36,3 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
     typeText(title, titleText);
   }
 });
+
+window.onload = function () {
+  setTimeout(function () {
+    document.getElementById("body").style.display = "";
+  }, 200);
+};

@@ -1,3 +1,4 @@
+/*open and close header on smaller screens*/
 const menuOpenButton = document.querySelector("#menu-open-button");
 const menuCloseButton = document.querySelector("#menu-close-button");
 
@@ -9,12 +10,30 @@ menuCloseButton.addEventListener("click", () => {
   menuOpenButton.click();
 });
 
+document.addEventListener("click", (event) => {
+  const navMenu = document.querySelector(".nav-menu");
+  const isClickInsideMenu = navMenu.contains(event.target);
+  const isClickOnMenuButton =
+    event.target === menuOpenButton || menuOpenButton.contains(event.target);
+
+  if (
+    document.body.classList.contains("show-mobile-menu") &&
+    !isClickInsideMenu &&
+    !isClickOnMenuButton
+  ) {
+    menuOpenButton.click();
+  }
+});
+
+/*automatically updates the copyright year*/
 document.getElementById("currentYear").textContent = new Date().getFullYear();
 
+/*reloads to top of page*/
 window.onload = function () {
   window.scrollTo(0, 0);
 };
 
+/*typewriter effect*/
 document.addEventListener("DOMContentLoaded", () => {
   if (
     window.location.pathname === "/" ||

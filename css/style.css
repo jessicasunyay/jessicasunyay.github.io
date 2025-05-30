@@ -234,6 +234,10 @@ header .navbar {
     background-color: var(--dark-purple);
 }
 
+.projects-section a {
+    color: var(--dark-purple);
+}
+
 .projects-section .section-title {
     color: var(--light-purple);
     padding-bottom: 20px;
